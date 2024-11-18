@@ -1,0 +1,190 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilos de las cards */
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.producto h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: center;
+    min-height: 2.4em; /* Para mantener la altura del título en dos líneas */
+}
+
+/* .producto p {
+    font-size: 0.9em;
+    text-align: center;
+    color: #666;
+} */
+
+.producto .descripcion {
+    flex-grow: 1;
+    margin-bottom: 20px;
+    text-align:justify;
+}
+
+.producto button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #2980b9;
+}
+.producto img {
+    width: 100%;
+    height: 200px; /* Fija la altura de la imagen */
+    object-fit: contain; /* Escala la imagen para que se ajuste al contenedor */
+    border-radius: 4px;
+}
+.producto h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: center;
+    height: 2.6em; /* Asegura un espacio fijo de dos líneas */
+    overflow: hidden;
+    display: -webkit-line-clamp;
+    
+    -webkit-box-orient: vertical;
+}
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* .producto img {
+    width: 100%;
+    height: auto;
+    object-fit: contain !important;  
+    margin-bottom: 15px;
+} */
+
+.producto h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+    min-height: 3em; /* Asegura que todos los títulos tengan la misma altura */
+}
+
+
+
+.producto p.descripcion {
+    font-size: 0.9em;
+    text-align: justify;
+    min-height: 120px; /* Define una altura mínima para que todas las descripciones se alineen */
+    margin: 10px 0;
+}
+
+.producto p.bullets {
+    font-size: 0.9em;
+    overflow: hidden; /* Oculta cualquier parte que sobresalga */
+    /* display: flex;
+    align-items:flex-start;
+    justify-content:left; */
+    text-align:left;
+    min-height: 120px; /* Define una altura mínima para que todas las descripciones se alineen */
+    margin: 10px 0;
+
+}
+
+.producto button {
+    margin-top: auto; /* Envía el botón al final de la card */
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #0056b3;
+}
+
+
+.image-container {
+    width: 200px;
+    height: 200px; /* Alto fijo que deseas para todas las imágenes */
+    overflow: hidden; /* Oculta cualquier parte que sobresalga */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta la imagen para cubrir el contenedor */
+    background-color: #f0f0f0; /* Opcional: un color de fondo para las áreas vacías */
+  }
+
+  .producto .precio {
+    font-size: 1.1em;
+    color: #666;
+    margin: 10px 0;
+    min-height: 2em; /* Asegura que los precios se alineen en todas las cards */
+}
+
+.white {
+    color: #fff;
+    font-family: roboto;
+}
